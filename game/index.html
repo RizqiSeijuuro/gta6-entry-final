@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bayfront Heat 2</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="game-root">
+    <canvas id="game-canvas" width="960" height="600"></canvas>
+
+    <div id="start-screen" class="overlay">
+      <div class="panel">
+        <h1>BAYFRONT HEAT 2</h1>
+        <p class="subtitle">An original top-down open-world crime game</p>
+        <p class="blurb">
+          Walk the streets of Bayfront, jack a car, dodge the cops when your wanted level
+          climbs, and run a short string of jobs for Freddy the fixer. WASD / arrows to
+          move, E to enter or exit a car, SHIFT to sprint on foot.
+        </p>
+        <button id="start-btn">START GAME</button>
+        <button id="continue-btn" class="secondary hidden">CONTINUE SAVED GAME</button>
+      </div>
+    </div>
+
+    <div id="hud" class="hidden">
+      <div id="hud-top-left">
+        <div id="health-bar-wrap">
+          <span class="hud-label">HEALTH</span>
+          <div class="bar-track"><div id="health-bar" class="bar-fill"></div></div>
+        </div>
+        <div id="cash-display"><span class="hud-label">CASH</span> $<span id="cash-value">0</span></div>
+      </div>
+      <div id="hud-top-right">
+        <div id="wanted-stars"></div>
+      </div>
+      <div id="hud-mission-box">
+        <div id="mission-title">No active mission</div>
+        <div id="mission-desc"></div>
+      </div>
+      <canvas id="minimap-canvas" width="150" height="150"></canvas>
+      <div id="toast-box"></div>
+    </div>
+
+    <div id="pause-hint" class="hidden">P: save &amp; pause info</div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
