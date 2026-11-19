@@ -12,9 +12,6 @@
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
-// This entry (Bayfront Heat): an original top-down 2D open-world crime game built for the
-// gta6-01 bounty — four districts, on-foot/driving movement, wanted-level police chases, a
-// short mission chain, HUD, and localStorage save/load. See game/ for the implementation.
 import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
