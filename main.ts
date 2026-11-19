@@ -12,6 +12,8 @@
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
+// Entry: Bayfront Heat, an original top-down open-world crime game (see game/).
+// Packages game/ + screenshots/ into MAKEFUN_OUTPUT_DIR (or /output) as a dossier.
 import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
